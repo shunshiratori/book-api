@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:24-jdk-alpine
 WORKDIR /app
 COPY . .
 RUN ./mvnw clean package -DskipTests
