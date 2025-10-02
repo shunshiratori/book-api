@@ -13,7 +13,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")  // すべてのAPIを対象
-                        .allowedOrigins("https://java-practice-book-management.vercel.app/")  // すべてのオリジンを許可（本番は限定するのが推奨）
+                        .allowedOrigins("*")  // すべてのオリジンを許可（本番は限定するのが推奨）
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };
