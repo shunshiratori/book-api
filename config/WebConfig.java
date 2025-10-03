@@ -1,4 +1,5 @@
-package com.example.bookpractice.config;
+//package com.example.bookpractice.config;
+package com.example.book_practice.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
