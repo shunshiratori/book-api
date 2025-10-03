@@ -14,6 +14,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")  // すべてのAPIを対象
+                        .allowedOriginPatterns("*")
                         .allowedOrigins("*")  // すべてのオリジンを許可（本番は限定するのが推奨）
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
